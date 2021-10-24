@@ -1,0 +1,318 @@
+--[[
+  __  __ __  __ ___                _           _         _____                 _ 
+ |  \/  |  \/  |__ \      /\      | |         (_)       |  __ \               | |
+ | \  / | \  / |  ) |    /  \   __| |_ __ ___  _ _ __   | |__) |_ _ _ __   ___| |
+ | |\/| | |\/| | / /    / /\ \ / _` | '_ ` _ \| | '_ \  |  ___/ _` | '_ \ / _ \ |
+ | |  | | |  | |/ /_   / ____ \ (_| | | | | | | | | | | | |  | (_| | | | |  __/ |
+ |_|  |_|_|  |_|____| /_/    \_\__,_|_| |_| |_|_|_| |_| |_|   \__,_|_| |_|\___|_|
+
+MM2 Admin Panel is a fork of the popular Vynixu's MM2 script, and a few Generic MM2 Scripts.
+MM2 Admin Panel brings a more compact, smaller design, inspired by Owl Hub,
+MM2 Admin Script brings Axon based DLL Compatibility, meaning exploits like
+Skisploit and Acrylix are able to utilize MM2 Admin Panel without any issues.
+
+Thank you to my friends Zyrex and Vegie for helping me with Kill Murderer
+]]--
+
+local MM2AdminPanel = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local StartFrame = Instance.new("ImageLabel")
+local BottomFrame = Instance.new("Frame")
+local Tab1 = Instance.new("TextButton")
+local Tab2 = Instance.new("TextButton")
+local Tab4 = Instance.new("TextButton")
+local PlayerFrame = Instance.new("ScrollingFrame")
+local Fly = Instance.new("Frame")
+local Activation = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local Noclip = Instance.new("Frame")
+local Activation_2 = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local Walkspeed = Instance.new("Frame")
+local SetActivation = Instance.new("TextButton")
+local WalkspeedTB = Instance.new("TextBox")
+local ResetActivation = Instance.new("TextButton")
+local JumpPower = Instance.new("Frame")
+local SetActivation_2 = Instance.new("TextButton")
+local JumpPowerTB = Instance.new("TextBox")
+local ResetActivation_2 = Instance.new("TextButton")
+local InfiniteJump = Instance.new("Frame")
+local Activation_3 = Instance.new("TextButton")
+local Title_3 = Instance.new("TextLabel")
+local Tab3 = Instance.new("TextButton")
+local MainFrame_2 = Instance.new("ScrollingFrame")
+local CoinFarm = Instance.new("Frame")
+local Activation_4 = Instance.new("TextButton")
+local Title_4 = Instance.new("TextLabel")
+local XRay = Instance.new("Frame")
+local Activation_5 = Instance.new("TextButton")
+local Title_5 = Instance.new("TextLabel")
+local AFKFarm = Instance.new("Frame")
+local Activation_6 = Instance.new("TextButton")
+local Title_6 = Instance.new("TextLabel")
+local KillMurderer = Instance.new("Frame")
+local Activation_7 = Instance.new("TextButton")
+local Title_7 = Instance.new("TextLabel")
+local GunGrabber = Instance.new("Frame")
+local Activation_8 = Instance.new("TextButton")
+local Title_8 = Instance.new("TextLabel")
+local KillAll = Instance.new("Frame")
+local Activation_9 = Instance.new("TextButton")
+local Title_9 = Instance.new("TextLabel")
+local AntiLag = Instance.new("Frame")
+local Activation_10 = Instance.new("TextButton")
+local Title_10 = Instance.new("TextLabel")
+local AimPlayer = Instance.new("Frame")
+local AimActivation = Instance.new("TextButton")
+local AimTB = Instance.new("TextBox")
+local DeAimActivation = Instance.new("TextButton")
+local VisualFrame = Instance.new("ScrollingFrame")
+local AllESP = Instance.new("Frame")
+local Activation_11 = Instance.new("TextButton")
+local Title_11 = Instance.new("TextLabel")
+local RefreshESP = Instance.new("Frame")
+local Activation_12 = Instance.new("TextButton")
+local Title_12 = Instance.new("TextLabel")
+local TeleportFrame = Instance.new("ScrollingFrame")
+local TP1 = Instance.new("Frame")
+local Activation_13 = Instance.new("TextButton")
+local Title_13 = Instance.new("TextLabel")
+local TP2 = Instance.new("Frame")
+local Activation_14 = Instance.new("TextButton")
+local Title_14 = Instance.new("TextLabel")
+local TeleportName = Instance.new("Frame")
+local TeleportTB = Instance.new("TextBox")
+local TeleportButton = Instance.new("TextButton")
+local TP3 = Instance.new("Frame")
+local Activation_15 = Instance.new("TextButton")
+local Title_15 = Instance.new("TextLabel")
+local TP4 = Instance.new("Frame")
+local Activation_16 = Instance.new("TextButton")
+local Title_16 = Instance.new("TextLabel")
+local TopFrame = Instance.new("Frame")
+local Title_17 = Instance.new("TextLabel")
+local MinimizeButton = Instance.new("TextButton")
+
+MM2AdminPanel.Name = "MM2AdminPanel"
+MM2AdminPanel.Parent = game.CoreGui
+MM2AdminPanel.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = MM2AdminPanel
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderColor3 = Color3.fromRGB(20, 20, 20)
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0, 387, 0, 229)
+
+StartFrame.Name = "StartFrame"
+StartFrame.Parent = MainFrame
+StartFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+StartFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StartFrame.BackgroundTransparency = 1.000
+StartFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+StartFrame.Image = "rbxassetid://3570695787"
+StartFrame.ImageColor3 = Color3.fromRGB(20, 20, 20)
+StartFrame.ScaleType = Enum.ScaleType.Slice
+StartFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+
+BottomFrame.Name = "BottomFrame"
+BottomFrame.Parent = MainFrame
+BottomFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+BottomFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BottomFrame.BorderColor3 = Color3.fromRGB(20, 20, 20)
+BottomFrame.BorderSizePixel = 0
+BottomFrame.ClipsDescendants = true
+BottomFrame.Position = UDim2.new(0.5, 0, 1.5, 0)
+BottomFrame.Size = UDim2.new(0, 387, 0, 229)
+
+Tab1.Name = "Tab1"
+Tab1.Parent = BottomFrame
+Tab1.AnchorPoint = Vector2.new(0.5, 0.5)
+Tab1.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Tab1.BorderSizePixel = 0
+Tab1.ClipsDescendants = true
+Tab1.Position = UDim2.new(0.111912139, 0, 0.216999963, 0)
+Tab1.Size = UDim2.new(0, 65, 0, 23)
+Tab1.Font = Enum.Font.Gotham
+Tab1.Text = "MAIN"
+Tab1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tab1.TextSize = 14.000
+
+Tab2.Name = "Tab2"
+Tab2.Parent = BottomFrame
+Tab2.AnchorPoint = Vector2.new(0.5, 0.5)
+Tab2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Tab2.BorderSizePixel = 0
+Tab2.ClipsDescendants = true
+Tab2.Position = UDim2.new(0.292790681, 0, 0.216999978, 0)
+Tab2.Size = UDim2.new(0, 75, 0, 23)
+Tab2.Font = Enum.Font.Gotham
+Tab2.Text = "PLAYER"
+Tab2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tab2.TextSize = 14.000
+
+Tab4.Name = "Tab4"
+Tab4.Parent = BottomFrame
+Tab4.AnchorPoint = Vector2.new(0.5, 0.5)
+Tab4.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Tab4.BorderSizePixel = 0
+Tab4.ClipsDescendants = true
+Tab4.Position = UDim2.new(0.688384891, 0, 0.216999963, 0)
+Tab4.Size = UDim2.new(0, 83, 0, 23)
+Tab4.Font = Enum.Font.Gotham
+Tab4.Text = "TELEPORT"
+Tab4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tab4.TextSize = 14.000
+
+PlayerFrame.Name = "PlayerFrame"
+PlayerFrame.Parent = BottomFrame
+PlayerFrame.Active = true
+PlayerFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+PlayerFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PlayerFrame.BorderSizePixel = 0
+PlayerFrame.Position = UDim2.new(0.5, 0, 0.611353695, 0)
+PlayerFrame.Size = UDim2.new(0, 367, 0, 158)
+PlayerFrame.Visible = false
+PlayerFrame.CanvasSize = UDim2.new(0, 0, 1, 0)
+PlayerFrame.ScrollBarThickness = 3
+
+Fly.Name = "Fly"
+Fly.Parent = PlayerFrame
+Fly.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Fly.BackgroundTransparency = 1.000
+Fly.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Fly.BorderSizePixel = 0
+Fly.ClipsDescendants = true
+Fly.Position = UDim2.new(0.0199999996, 0, 0.0199999996, 0)
+Fly.Size = UDim2.new(0, 161, 0, 20)
+
+Activation.Name = "Activation"
+Activation.Parent = Fly
+Activation.BackgroundColor3 = Color3.fromRGB(255, 51, 51)
+Activation.BorderSizePixel = 0
+Activation.Size = UDim2.new(0, 20, 0, 20)
+Activation.Font = Enum.Font.Gotham
+Activation.Text = ""
+Activation.TextColor3 = Color3.fromRGB(0, 0, 0)
+Activation.TextSize = 14.000
+
+Title.Name = "Title"
+Title.Parent = Fly
+Title.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.161490679, 0, 0, 0)
+Title.Size = UDim2.new(0.838509321, 0, 1, 0)
+Title.Font = Enum.Font.Gotham
+Title.Text = "Fly [X]"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Noclip.Name = "Noclip"
+Noclip.Parent = PlayerFrame
+Noclip.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Noclip.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Noclip.BorderSizePixel = 0
+Noclip.ClipsDescendants = true
+Noclip.Position = UDim2.new(0.0199999996, 0, 0.126000002, 0)
+Noclip.Size = UDim2.new(0, 161, 0, 20)
+
+Activation_2.Name = "Activation"
+Activation_2.Parent = Noclip
+Activation_2.BackgroundColor3 = Color3.fromRGB(255, 51, 51)
+Activation_2.BorderSizePixel = 0
+Activation_2.Size = UDim2.new(0, 20, 0, 20)
+Activation_2.Font = Enum.Font.Gotham
+Activation_2.Text = ""
+Activation_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Activation_2.TextSize = 14.000
+
+Title_2.Name = "Title"
+Title_2.Parent = Noclip
+Title_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.161490679, 0, 0, 0)
+Title_2.Size = UDim2.new(0.838509321, 0, 1, 0)
+Title_2.Font = Enum.Font.Gotham
+Title_2.Text = "Noclip [C]"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = PlayerFrame
+Walkspeed.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Walkspeed.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Walkspeed.BorderSizePixel = 0
+Walkspeed.ClipsDescendants = true
+Walkspeed.Position = UDim2.new(0.0199999996, 0, 0.335999995, 0)
+Walkspeed.Size = UDim2.new(0, 161, 0, 42)
+
+SetActivation.Name = "SetActivation"
+SetActivation.Parent = Walkspeed
+SetActivation.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SetActivation.BorderSizePixel = 0
+SetActivation.Position = UDim2.new(0, 0, 0.555555582, 0)
+SetActivation.Size = UDim2.new(0, 36, 0, 20)
+SetActivation.Font = Enum.Font.Gotham
+SetActivation.Text = "Set"
+SetActivation.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetActivation.TextSize = 14.000
+
+WalkspeedTB.Name = "WalkspeedTB"
+WalkspeedTB.Parent = Walkspeed
+WalkspeedTB.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+WalkspeedTB.BorderColor3 = Color3.fromRGB(40, 40, 40)
+WalkspeedTB.BorderSizePixel = 0
+WalkspeedTB.Position = UDim2.new(-0.000559931214, 0, -0.0166666675, 0)
+WalkspeedTB.Size = UDim2.new(0.732458353, 0, 0.394444436, 0)
+WalkspeedTB.Font = Enum.Font.Gotham
+WalkspeedTB.Text = "Insert Walkspeed"
+WalkspeedTB.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkspeedTB.TextSize = 14.000
+
+ResetActivation.Name = "ResetActivation"
+ResetActivation.Parent = Walkspeed
+ResetActivation.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+ResetActivation.BorderSizePixel = 0
+ResetActivation.Position = UDim2.new(0.259848803, 0, 0.555555582, 0)
+ResetActivation.Size = UDim2.new(0, 76, 0, 20)
+ResetActivation.Font = Enum.Font.Gotham
+ResetActivation.Text = "Reset"
+ResetActivation.TextColor3 = Color3.fromRGB(255, 255, 255)
+ResetActivation.TextSize = 14.000
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = PlayerFrame
+JumpPower.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+JumpPower.BorderColor3 = Color3.fromRGB(30, 30, 30)
+JumpPower.BorderSizePixel = 0
+JumpPower.ClipsDescendants = true
+JumpPower.Position = UDim2.new(0.0199999996, 0, 0.537, 0)
+JumpPower.Size = UDim2.new(0, 161, 0, 42)
+
+SetActivation_2.Name = "SetActivation"
+SetActivation_2.Parent = JumpPower
+SetActivation_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SetActivation_2.BorderSizePixel = 0
+SetActivation_2.Position = UDim2.new(0, 0, 0.555555582, 0)
+SetActivation_2.Size = UDim2.new(0, 36, 0, 20)
+SetActivation_2.Font = Enum.Font.Gotham
+SetActivation_2.Text = "Set"
+SetActivation_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+SetActivation_2.TextSize = 14.000
+
+JumpPowerTB.Name = "JumpPowerTB"
+JumpPowerTB.Parent = JumpPower
+JumpPowerTB.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+JumpPowerTB.Bord
